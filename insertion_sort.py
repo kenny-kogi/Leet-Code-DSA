@@ -4,7 +4,6 @@ def insertion_sort(a_list):
         cur_pos = i
 
         while cur_pos > 0 and a_list[cur_pos - 1] > cur_value:
-            # a_list[i - 1], a_list[i] = a_list[i], a_list[i - 1]
             a_list[cur_pos] = a_list[cur_pos - 1]
             cur_pos = cur_pos - 1
         a_list[cur_pos] = cur_value
