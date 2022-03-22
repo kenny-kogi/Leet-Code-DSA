@@ -1,14 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
-
-This is a temporary script file.
-"""
-
-
-
-
-"""
 greatest common divisor (20, 12)
 
 x/y

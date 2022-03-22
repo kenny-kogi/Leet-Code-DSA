@@ -1,17 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
-
-
-
-"""
-Linkded List in Python
-"""
-
 
 class Node():
     def __init__(self, data, next = None):
