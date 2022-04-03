@@ -1,22 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
-"""
-
-
-
-
-"""
-greatest common divisor (20, 12)
-
-x/y
-20/12 = 1 rem 8
-12/8 = 1 rem 4
-8/4 = 1 rem 0
-
-"""
 
 def longest_substring(s):
     l = len(s)
@@ -31,6 +14,12 @@ def longest_substring(s):
     return ans
      
 print(longest_substring("pwwkew"))   
+
+
+
+
+
+
     
     
     

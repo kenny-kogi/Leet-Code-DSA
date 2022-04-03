@@ -1,6 +1,3 @@
-from pstats import SortKey
-
-
 def bubble_sort(a_list):
     for i in range(len(a_list) - 1, 0, -1):
         for j in range(i):

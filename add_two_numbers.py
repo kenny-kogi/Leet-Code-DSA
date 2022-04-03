@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
 
 def longestPalindrome(s):
     res = ""
@@ -34,3 +28,11 @@ def longestPalindrome(s):
     return res 
         
 print(longestPalindrome("ababb"))
+
+"""
+ababb
+
+
+
+
+"""

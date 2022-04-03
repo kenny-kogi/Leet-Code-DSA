@@ -62,37 +62,37 @@ def solution(A, B, C):
 print(solution(1, 2, 3))
 
 
-from queue import PriorityQueue
-class Solution:
-    def longestDiverseString(self, a: int, b: int, c: int) -> str:
+# from queue import PriorityQueue
+# class Solution:
+#     def longestDiverseString(self, a: int, b: int, c: int) -> str:
         
-        q = PriorityQueue()
-        q.put((-1*a,"a")) if a else None
-        q.put((-1*b,"b")) if b else None
-        q.put((-1*c,"c")) if c else None
-        res = [] # We will append each letter in this list
-        prev1 = "" 
-        prev2 = ""
-        while not q.empty():
-            num, let = q.get()
+#         q = PriorityQueue()
+#         q.put((-1*a,"a")) if a else None
+#         q.put((-1*b,"b")) if b else None
+#         q.put((-1*c,"c")) if c else None
+#         res = [] # We will append each letter in this list
+#         prev1 = "" 
+#         prev2 = ""
+#         while not q.empty():
+#             num, let = q.get()
             
-            # choose next best letter, when the chosen letter appears third time
-            if prev1 == let and prev1 == prev2 :
-                if q.empty():
-                    break
-                tnum, tlet = q.get()          
-                q.put((num,let))
-                num = tnum
-                let = tlet
+#             # choose next best letter, when the chosen letter appears third time
+#             if prev1 == let and prev1 == prev2 :
+#                 if q.empty():
+#                     break
+#                 tnum, tlet = q.get()          
+#                 q.put((num,let))
+#                 num = tnum
+#                 let = tlet
                               
-            num = -1*num            
-            res.append(let)
-            num=num-1
+#             num = -1*num            
+#             res.append(let)
+#             num=num-1
             
-            # if still there is scope for adding letter, put back into PriorityQueue
-            if num>0:
-                q.put((-1*num,let))
-            prev2=prev1
-            prev1=let
+#             # if still there is scope for adding letter, put back into PriorityQueue
+#             if num>0:
+#                 q.put((-1*num,let))
+#             prev2=prev1
+#             prev1=let
                 
-        return "".join(res)
+#         return "".join(res)

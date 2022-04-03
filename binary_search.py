@@ -22,22 +22,22 @@ print(binary_search(listOfItems, 10))
 
 # Using Recursive
 
-# def binary_search_rec(list_items, item):
-#     if len(list_items) == 0:
-#         return False
-#     else:
-#         midpoint = len(list_items) // 2
+def binary_search_rec(list_items, item):
+    if len(list_items) == 0:
+        return False
+    else:
+        midpoint = len(list_items) // 2
 
-#         if list_items[midpoint] == item:
-#             return True
-#         elif (item < list_items[midpoint]):
-#             return binary_search_rec(list_items[:midpoint], item)
-#         else:
-#             return binary_search_rec(list_items[midpoint + 1:], item)
+        if list_items[midpoint] == item:
+            return True
+        elif (item < list_items[midpoint]):
+            return binary_search_rec(list_items[:midpoint], item)
+        else:
+            return binary_search_rec(list_items[midpoint + 1:], item)
 
-# listOfItems = [1, 2 , 3, 4, 5, 6, 7, 8]
-# print(binary_search_rec(listOfItems, 7))
-# print(binary_search_rec(listOfItems, 10))
+listOfItems = [1, 2 , 3, 4, 5, 6, 7, 8]
+print(binary_search_rec(listOfItems, 7))
+print(binary_search_rec(listOfItems, 10))
 
 
 # def midpoint(list_item):

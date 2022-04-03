@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
-This is a temporary script file.
-"""
-
-
 
 def myAtoi(self, s: str) -> int:
     s1 = s.split()
