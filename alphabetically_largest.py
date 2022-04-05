@@ -3,7 +3,7 @@ We are given a string S consisting of N letters. We want to find the alphabetica
 
 """
 
-def largestCharacter(str):
+def solution(str):
     upper_case = [False] * 26
     lower_case = [False] * 26
      
@@ -16,8 +16,7 @@ def largestCharacter(str):
              
     # Iterate from right side of array
     # to get the largest index character
-    for i in range(25,-1,-1):
-         
+    for i in range(25,-1,-1):   
         # Check for the character if both its
         # uppercase and lowercase exist or not
         if (upper_case[i] and lower_case[i]):
@@ -28,7 +27,3 @@ def largestCharacter(str):
     return "NO"
  
 
- 
-str = "Codility"
-print(largestCharacter(str))
-     

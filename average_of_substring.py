@@ -1,17 +1,3 @@
-# def find_averages_of_subarrays(K, arr):
-#   result = []
-
-#   for i in range(len(arr)-K+1):
-#     # find sum of next 'K' elements
-#     print(i)
-#     _sum = 0.0
-#     for j in range(i, i+K):
-#       _sum += arr[j]
-#     result.append(_sum/K)  # calculate average
-
-#   return result
-
-
 def find_averages_of_subarrays(K, arr):
     result = []
 
@@ -24,7 +10,7 @@ def find_averages_of_subarrays(K, arr):
             result.append(window_sum/K)
             window_sum -= arr[window_start]
             window_start += 1
-            
+
     return result
 
 
