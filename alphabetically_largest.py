@@ -21,9 +21,9 @@ def solution(str):
         # uppercase and lowercase exist or not
         if (upper_case[i] and lower_case[i]):
             return chr(i + ord('A')) + ""
-    # Return -1 if no such character whose
+    # Return No if no such character whose
     # uppercase and lowercase present in
     # string str
     return "NO"
  
-
+print(solution("blobeye"))

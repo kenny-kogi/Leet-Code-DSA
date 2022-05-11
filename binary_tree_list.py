@@ -35,11 +35,8 @@ def get_right_child(root):
     return root[2]
 
 a_tree = make_binary_tree(3)
-print(a_tree)
 insert_left(a_tree, 4)
-
 insert_left(a_tree, 5)
-print(a_tree)
 insert_right(a_tree, 6)
 print(a_tree)
 insert_right(a_tree, 7)

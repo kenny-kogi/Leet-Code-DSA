@@ -20,4 +20,4 @@ def zigzag(s, numRows):
     
     return res
     
-zigzag("PAYPALISHIRING", 3)
+print(zigzag("PAYPALISHIRING", 3))
